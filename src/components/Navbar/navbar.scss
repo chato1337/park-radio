@@ -1,0 +1,21 @@
+.navbar {
+	color: white;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+
+	& > div {
+		padding: 15px;
+	}
+
+	&__logo img {
+		height: 50px;
+	}
+
+	&__links a {
+		color: white;
+		padding: 5px;
+	}
+}
