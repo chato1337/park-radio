@@ -1,0 +1,29 @@
+.playBar {
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	//color: white;
+	background-color: rgb(117, 117, 117);
+	//position: fixed;
+	//bottom: 0;
+	&__song {
+		display: flex;
+		align-items: center;
+		margin-right: 15px;
+		&-albumImg {
+			height: 80px;
+			width: 80px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&__player {
+		/*				
+        style="display: block; font-size: 0.9em; line-height: 10px;"
+        */
+	}
+}
