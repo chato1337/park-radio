@@ -2,9 +2,12 @@
 	color: white;
 	background-color: black;
 	display: flex;
+	position: fixed;
+	top: 0;
 	justify-content: space-between;
 	align-items: center;
 	height: 70px;
+	width: 100%;
 
 	& > div {
 		padding: 15px;

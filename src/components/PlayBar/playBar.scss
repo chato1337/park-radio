@@ -1,9 +1,8 @@
 .playBar {
-	height: calc(100vh - 100px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5px;
+	height: 100vh;
 	background: #373b44; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to right,
@@ -29,8 +28,8 @@
 		}
 	}
 	&__player {
-		/*				
-        style="display: block; font-size: 0.9em; line-height: 10px;"
-        */
+		box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.48);
+		-webkit-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.48);
+		-moz-box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.48);
 	}
 }

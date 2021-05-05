@@ -9,7 +9,7 @@ const PlayBar = () => {
 				src="https://zeno.fm/player/chatuzpark-radio"
 				width="575"
 				height="475"
-				frameborder="0"
+				frameBorder="0"
 				scrolling="no"
 			></iframe>
 		</div>
