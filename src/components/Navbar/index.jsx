@@ -1,18 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "./navbar.scss";
 import Logo from "../../logo.svg";
 
 const Navbar = () => {
+	const [darkMode, setDarkMode] = useState(false);
+
+	const handleClick = () => {
+		setDarkMode(!darkMode);
+	};
+
 	return (
 		<div className="navbar">
 			<div className="navbar__logo">
 				<img src={Logo} alt="logo image" />
 			</div>
-			<div className="navbar__links">
-				<Link to="/">Home</Link>
-				<Link to="/contact">Contact</Link>
-			</div>
+			<button type="button" onClick={handleClick}>
+				{darkMode ? "Dark Mode" : "Light Mode"}
+			</button>
 		</div>
 	);
 };
