@@ -8,7 +8,7 @@ const App = () => {
 	return (
 		<div>
 			<Navbar />
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/park-radio" component={Home} />
 				<Route exact path="/contact" component={Contact} />
